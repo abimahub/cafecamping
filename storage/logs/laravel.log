@@ -1433,3 +1433,61 @@ Error Output:
 #53 /home/ubuntu/cheep/server.php(21): require_once('...')
 #54 {main}
 "} 
+[2023-07-04 12:44:57] local.ERROR: Target class [App\Http\Middleware\TrustProxies] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Middleware\\TrustProxies] does not exist. at /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php:879)
+[stacktrace]
+#0 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#1 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#2 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#3 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#4 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(156): Illuminate\\Foundation\\Application->make()
+#5 /home/ubuntu/cheep/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#6 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle()
+#7 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#9 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#10 /home/ubuntu/cheep/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#11 /home/ubuntu/cheep/server.php(21): require_once('...')
+#12 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"App\\Http\\Middleware\\TrustProxies\" does not exist at /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php:877)
+[stacktrace]
+#0 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#2 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#3 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#4 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#5 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(156): Illuminate\\Foundation\\Application->make()
+#6 /home/ubuntu/cheep/vendor/itsgoingd/clockwork/Clockwork/Support/Laravel/ClockworkMiddleware.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#7 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Clockwork\\Support\\Laravel\\ClockworkMiddleware->handle()
+#8 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#10 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#11 /home/ubuntu/cheep/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#12 /home/ubuntu/cheep/server.php(21): require_once('...')
+#13 {main}
+"} 
+[2023-07-04 12:44:57] local.ERROR: Target class [App\Http\Middleware\TrustProxies] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Middleware\\TrustProxies] does not exist. at /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php:879)
+[stacktrace]
+#0 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#1 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#2 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#3 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#4 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(206): Illuminate\\Foundation\\Application->make()
+#5 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(180): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware()
+#6 /home/ubuntu/cheep/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate()
+#7 /home/ubuntu/cheep/server.php(21): require_once('...')
+#8 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"App\\Http\\Middleware\\TrustProxies\" does not exist at /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php:877)
+[stacktrace]
+#0 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#2 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#3 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#4 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#5 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(206): Illuminate\\Foundation\\Application->make()
+#6 /home/ubuntu/cheep/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(180): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware()
+#7 /home/ubuntu/cheep/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate()
+#8 /home/ubuntu/cheep/server.php(21): require_once('...')
+#9 {main}
+"} 
