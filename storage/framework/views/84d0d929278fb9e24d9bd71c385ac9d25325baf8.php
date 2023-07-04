@@ -1,6 +1,8 @@
 <!doctype html>
-
-<title>Laravel From Scratch Blog</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CafeCamping</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,7 +23,7 @@
         -webkit-line-clamp: 1;
     }
 </style>
-
+</head>
 <body style="font-family: Open Sans, sans-serif">
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
@@ -41,7 +43,7 @@
 <?php $component->withAttributes([]); ?>
                          <?php $__env->slot('trigger', null, []); ?> 
                             <button class="text-xs font-bold uppercase">
-                                Welcome, <?php echo e(auth()->user()->username); ?>!
+                                Welcome, <?php echo e(auth()->user()->name); ?>!
                             </button>
                          <?php $__env->endSlot(); ?>
 
@@ -100,18 +102,18 @@
 <?php endif; ?>
                 <?php else: ?>
                     <a href="/register"
-                       class="text-xs font-bold uppercase <?php echo e(request()->is('register') ? 'text-blue-500' : ''); ?>">
+                       class="text-xs font-bold uppercase <?php echo e(request()->is('register') ? 'text-green-700' : ''); ?>">
                         Register
                     </a>
 
                     <a href="/login"
-                       class="ml-6 text-xs font-bold uppercase <?php echo e(request()->is('login') ? 'text-blue-500' : ''); ?>">
+                       class="ml-6 text-xs font-bold uppercase <?php echo e(request()->is('login') ? 'text-green-700' : ''); ?>">
                         Log In
                     </a>
                 <?php endif; ?>
 
                 <a href="#newsletter"
-                   class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+                   class="bg-green-700 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                     Subscribe for Updates
                 </a>
             </div>
@@ -121,22 +123,22 @@
 
 
         <footer id="newsletter"
-                class="bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16"
+                class="bg-green-100 border border-green border-opacity-5 rounded-xl text-center py-16 px-10 mt-16"
         >
-            <img src="/images/lary-newsletter-icon.svg" alt="" class="mx-auto -mb-6" style="width: 145px;">
+            <img src="/newsletter.png" alt="" class="mx-auto -mb-6" style="width: 145px; text-green-700">
 
             <h5 class="text-3xl">Stay in touch with the latest posts</h5>
             <p class="text-sm mt-3">Promise to keep the inbox clean. No bugs.</p>
 
             <div class="mt-10">
-                <div class="relative inline-block mx-auto lg:bg-gray-200 rounded-full">
+                <div class="relative inline-block mx-auto lg:bg-green-200 rounded-full">
 
                     <form method="POST" action="/newsletter" class="lg:flex text-sm">
                         <?php echo csrf_field(); ?>
 
                         <div class="lg:py-3 lg:px-5 flex items-center">
                             <label for="email" class="hidden lg:inline-block">
-                                <img src="/images/mailbox-icon.svg" alt="mailbox letter">
+                                <img src="/images/mail.png" alt="email letter">
                             </label>
 
                             <div>
@@ -160,7 +162,7 @@ unset($__errorArgs, $__bag); ?>
                         </div>
 
                         <button type="submit"
-                                class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8"
+                                class="transition-colors duration-300 bg-green-500 hover:bg-green-700 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8"
                         >
                             Subscribe
                         </button>

@@ -9,9 +9,9 @@
 <?php unset($__defined_vars); ?>
 
 <?php
-    $classes = 'block text-left px-3 text-sm leading-6 hover:bg-blue-500 focus:bg-blue-500 hover:text-white focus:text-white';
+    $classes = 'block text-left px-3 text-sm leading-6 hover:bg-green-700 focus:bg-green-700 hover:text-white focus:text-white';
 
-    if ($active) $classes .= ' bg-blue-500 text-white';
+    if ($active) $classes .= ' bg-green-700 text-white';
 ?>
 
 <a <?php echo e($attributes(['class' => $classes])); ?>

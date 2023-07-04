@@ -9,7 +9,7 @@
 <?php unset($__defined_vars); ?>
 
 <a href="/?category=<?php echo e($category->slug); ?>"
-   class="px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase font-semibold"
+   class="px-3 py-1 border border-green-500 rounded-full text-green-500 text-xs uppercase font-semibold"
    style="font-size: 10px"
 ><?php echo e($category->name); ?></a>
 <?php /**PATH /home/ubuntu/cheep/resources/views/components/category-button.blade.php ENDPATH**/ ?>
