@@ -23,7 +23,7 @@
                     name="body"
                     class="w-full text-sm focus:outline-none focus:ring"
                     rows="5"
-                    placeholder="Quick, thing of something to say!"
+                    placeholder="Why not say something encouraging?"
                     required></textarea>
 
                 <?php $__errorArgs = ['body'];
@@ -38,7 +38,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
             </div>
 
-            <div class="flex justify-end mt-6 pt-6 border-t border-gray-200">
+            <div class="flex justify-end mt-6 pt-6 border-t border-green-200">
                 <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.form.button','data' => []]); ?>
 <?php $component->withName('form.button'); ?>

@@ -20,11 +20,11 @@
 
             <ul>
                 <li>
-                    <a href="/admin/posts" class="<?php echo e(request()->is('admin/posts') ? 'text-blue-500' : ''); ?>">All Posts</a>
+                    <a href="/admin/posts" class="<?php echo e(request()->is('admin/posts') ? 'text-green-700' : ''); ?>">All Posts</a>
                 </li>
 
                 <li>
-                    <a href="/admin/posts/create" class="<?php echo e(request()->is('admin/posts/create') ? 'text-blue-500' : ''); ?>">New Post</a>
+                    <a href="/admin/posts/create" class="<?php echo e(request()->is('admin/posts/create') ? 'text-green-700' : ''); ?>">New Post</a>
                 </li>
             </ul>
         </aside>

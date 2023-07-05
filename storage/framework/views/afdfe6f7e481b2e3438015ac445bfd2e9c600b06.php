@@ -8,7 +8,7 @@
 } ?>
 <?php unset($__defined_vars); ?>
 
-<label class="block mb-2 uppercase font-bold text-xs text-gray-700"
+<label class="block mb-2 uppercase font-bold text-xs text-green-700"
        for="<?php echo e($name); ?>"
 >
     <?php echo e(ucwords($name)); ?>

@@ -1,4 +1,4 @@
-<div <?php echo e($attributes(['class' => 'border border-gray-200 p-6 rounded-xl'])); ?>>
+<div <?php echo e($attributes(['class' => 'border border-green-200 p-6 rounded-xl'])); ?>>
     <?php echo e($slot); ?>
 
 </div>
