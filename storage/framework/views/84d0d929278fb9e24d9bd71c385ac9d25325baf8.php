@@ -31,9 +31,6 @@
                 <a href="/">
                     <img src="/images/laptop-coffee-cup-svgrepo-com.svg" alt="CafeCamping logo" width="165" height="16">
                 </a>
-                <a href="/">
-                    <img src="/images/notebook.png" alt="CafeCamping logo" width="165" height="16">
-                </a>
             </div>
 
             <div class="mt-8 md:mt-0 flex items-center">

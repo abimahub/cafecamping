@@ -53,7 +53,7 @@
 
             <footer class="flex justify-between items-center mt-8">
                 <div class="flex items-center text-sm">
-                    <img src="/images/id-card-svgrepo-com.xcf" alt="id card">
+                    <img src="/images/id-card-svgrepo-com.svg" alt="id card" style="max-width:52px;">
                     <div class="ml-3">
                         <h5 class="font-bold">
                             <a href="/?author=<?php echo e($post->author->username); ?>"><?php echo e($post->author->name); ?></a>
