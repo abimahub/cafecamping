@@ -9,11 +9,11 @@
 <?php unset($__defined_vars); ?>
 
 <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
-<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.panel','data' => ['class' => 'bg-gray-50']]); ?>
+<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.panel','data' => ['class' => 'bg-green-50']]); ?>
 <?php $component->withName('panel'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php $component->withAttributes(['class' => 'bg-gray-50']); ?>
+<?php $component->withAttributes(['class' => 'bg-green-50']); ?>
     <article class="flex space-x-4">
         <div class="flex-shrink-0">
             <img src="https://i.pravatar.cc/60?u=<?php echo e($comment->user_id); ?>" alt="" width="60" height="60" class="rounded-xl">

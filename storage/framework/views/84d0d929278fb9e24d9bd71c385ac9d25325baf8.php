@@ -29,7 +29,10 @@
         <nav class="md:flex md:justify-between md:items-center">
             <div>
                 <a href="/">
-                    <img src="/images/favicon-32x32.png" alt="CafeCamping logo" width="165" height="16">
+                    <img src="/images/laptop-coffee-cup-svgrepo-com.svg" alt="CafeCamping logo" width="165" height="16">
+                </a>
+                <a href="/">
+                    <img src="/images/notebook.png" alt="CafeCamping logo" width="165" height="16">
                 </a>
             </div>
 
