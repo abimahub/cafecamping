@@ -1,10 +1,11 @@
 @props(['post'])
 
 <article
-    class="transition-colors duration-300 hover:bg-green-100 border border-green border-opacity-0 hover:border-opacity-5 rounded-xl">
+    class="transition-colors duration-300 bg-green-200 hover:bg-green-100 border border-green border-opacity-0 hover:border-opacity-5 rounded-xl">
     <div class="py-6 px-5 lg:flex">
         <div class="flex-1 lg:mr-8">
-            <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="Blog Post illustration" class="rounded-xl">
+            {{-- <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="Blog Post illustration" class="rounded-xl"> --}}
+            <img src="img/{{ asset('storage/' . $post->thumbnail) }}.jpg" onerror="this.onerror=null;this.src='/images/picture-svgrepo-com.svg';" alt="Blog Post illustration" class="rounded-xl"/>
         </div>
 
         <div class="flex-1 flex flex-col justify-between">
@@ -20,7 +21,7 @@
                         </a>
                     </h1>
 
-                    <span class="mt-2 block text-green-400 text-xs">
+                    <span class="mt-2 block text-green-500 text-xs">
                         Published <time>{{ $post->created_at->diffForHumans() }}</time>
                     </span>
                 </div>
@@ -32,7 +33,7 @@
 
             <footer class="flex justify-between items-center mt-8">
                 <div class="flex items-center text-sm">
-                    <img src="/images/id-card-svgrepo-com.svg" alt="id card" style="max-width:52px;">
+                    <img src="/images/cafe-card-food-menu-vintage-svgrepo-com.jpg" alt="id card">
                     <div class="ml-3">
                         <h5 class="font-bold">
                             <a href="/?author={{ $post->author->username }}">{{ $post->author->name }}</a>
@@ -42,7 +43,7 @@
 
                 <div class="hidden lg:block">
                     <a href="/posts/{{ $post->slug }}"
-                       class="transition-colors duration-300 text-xs font-semibold bg-green-200 hover:bg-green-400 rounded-full py-2 px-8"
+                       class="transition-colors duration-300 text-xs text-white font-semibold bg-green-500 hover:bg-green-200 rounded-full py-2 px-8"
                     >Read More</a>
                 </div>
             </footer>
