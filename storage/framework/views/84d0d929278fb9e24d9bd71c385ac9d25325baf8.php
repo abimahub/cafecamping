@@ -136,9 +136,9 @@
                     <form method="POST" action="/newsletter" class="lg:flex text-sm">
                         <?php echo csrf_field(); ?>
 
-                        <div class="lg:py-3 lg:px-5 flex items-center">
+                        <div class="lg:py-3 lg:px-5 pr-4 flex items-left">
                             <label for="email" class="hidden lg:inline-block">
-                                <img src="/images/mail.png" alt="email letter">
+                                <img src="/images/mail.png" alt="email letter" style="max-width: 52px;" class="bg-green-400">
                             </label>
 
                             <div>
@@ -146,7 +146,7 @@
                                        name="email"
                                        type="text"
                                        placeholder="Your email address"
-                                       class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none">
+                                       class="lg:bg-white px-8 border-gray-300 rounded py-2 lg:py-0 pl-4 focus-within:outline-none">
 
                                 <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -162,7 +162,7 @@ unset($__errorArgs, $__bag); ?>
                         </div>
 
                         <button type="submit"
-                                class="transition-colors duration-300 bg-green-500 hover:bg-green-700 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8"
+                                class="transition-colors duration-300 bg-green-500 hover:bg-green-300 mt-4 md:mt-0 md:ml-3 rounded-md text-xs font-semibold text-white uppercase py-3 px-4"
                         >
                             Subscribe
                         </button>

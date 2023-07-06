@@ -64,7 +64,7 @@
 
                 <div>
                     <a href="/posts/<?php echo e($post->slug); ?>"
-                       class="transition-colors duration-300 text-xs font-semibold bg-green-200 hover:bg-green-400 rounded-full py-2 px-8"
+                       class="transition-colors duration-300 text-xs text-white font-semibold bg-green-500 hover:bg-green-200 hover:text-green-700 rounded-full py-2 px-8"
                     >Read More</a>
                 </div>
             </footer>

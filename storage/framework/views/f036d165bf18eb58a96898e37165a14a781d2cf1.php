@@ -8,7 +8,7 @@
         <article class="max-w-4xl mx-auto lg:grid lg:grid-cols-12 gap-x-10">
             <div class="col-span-4 lg:text-center lg:pt-14 mb-10">
                 
-                 <img src="img/<?php echo e(asset('storage/' . $post->thumbnail)); ?>.jpg" onerror="this.onerror=null;this.src='/images/picture-svgrepo-com.jpg';" alt="Blog Post illustration" class="rounded-xl"/>        
+                 <img src="img/<?php echo e(asset('storage/' . $post->thumbnail)); ?>.jpg" onerror="this.onerror=null;this.src='/images/picture-svgrepo-com.jpg';" alt="Blog Post illustration" class="rounded"/>        
         
                 <p class="mt-4 block text-green-500 text-xs">
                     Published
