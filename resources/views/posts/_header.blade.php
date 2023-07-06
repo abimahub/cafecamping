@@ -4,12 +4,12 @@
     </h1>
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-4">
-        <div class="relative lg:inline-flex bg-green-100 rounded-xl">
+        <div class="relative lg:inline-flex bg-green-500 text-white rounded-xl">
             <x-category-dropdown />
         </div>
 
         <!-- Search -->
-        <div class="relative flex lg:inline-flex items-center bg-green-100 rounded-xl px-3 py-2">
+        <div class="relative flex lg:inline-flex items-center bg-green-500 text-white rounded-xl px-3 py-2">
             <form method="GET" action="/">
                 @if (request('category'))
                     <input type="hidden" name="category" value="{{ request('category') }}">

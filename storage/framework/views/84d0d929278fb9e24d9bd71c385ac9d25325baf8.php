@@ -29,7 +29,7 @@
         <nav class="md:flex md:justify-between md:items-center">
             <div>
                 <a href="/">
-                    <img src="/images/laptop-coffee-cup-svgrepo-com.svg" alt="CafeCamping logo" width="165" height="16">
+                    <img src="/images/cafecampinglogo.png" alt="CafeCamping logo" width="165" height="16">
                 </a>
             </div>
 
@@ -113,7 +113,7 @@
                 <?php endif; ?>
 
                 <a href="#newsletter"
-                   class="bg-green-700 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+                   class="bg-green-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                     Subscribe for Updates
                 </a>
             </div>
@@ -123,7 +123,7 @@
 
 
         <footer id="newsletter"
-                class="bg-green-100 border border-green border-opacity-5 rounded-xl text-center py-16 px-10 mt-16"
+                class="bg-green-200 border border-green border-opacity-5 rounded-xl text-center py-16 px-10 mt-16"
         >
             <img src="/newsletter.png" alt="" class="mx-auto -mb-6" style="width: 145px; text-green-700">
 
