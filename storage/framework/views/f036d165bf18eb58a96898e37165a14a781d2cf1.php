@@ -7,15 +7,16 @@
     <main class="max-w-6xl mx-auto mt-10 lg:mt-20 space-y-6">
         <article class="max-w-4xl mx-auto lg:grid lg:grid-cols-12 gap-x-10">
             <div class="col-span-4 lg:text-center lg:pt-14 mb-10">
-                <img src="<?php echo e(asset('storage/' . $post->thumbnail)); ?>" alt="" class="rounded-xl">
-
+                
+                 <img src="img/<?php echo e(asset('storage/' . $post->thumbnail)); ?>.jpg" onerror="this.onerror=null;this.src='/images/picture-svgrepo-com.jpg';" alt="Blog Post illustration" class="rounded-xl"/>        
+        
                 <p class="mt-4 block text-green-500 text-xs">
                     Published
                     <time><?php echo e($post->created_at->diffForHumans()); ?></time>
                 </p>
 
                 <div class="flex items-center lg:justify-center text-sm mt-4">
-                    <img src="/images/id-card-svgrepo-com.xcf" alt="id card">
+                    <img src="/images/id-card-svgrepo-com.jpg" alt="id card">
                     <div class="ml-3 text-left">
                         <h5 class="font-bold">
                             <a href="/?author=<?php echo e($post->author->username); ?>"><?php echo e($post->author->name); ?></a>

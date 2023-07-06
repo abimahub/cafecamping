@@ -5,7 +5,7 @@
     <div class="py-6 px-5 h-full flex flex-col">
         <div>
             {{-- <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="Blog Post illustration" class="rounded-xl"> --}}
-             <img src="img/{{ asset('storage/' . $post->thumbnail) }}.jpg" onerror="this.onerror=null;this.src='/images/picture-svgrepo-com.jpg';" alt="Blog Post illustration" class="rounded-xl"/>        
+             <img src="img/{{ asset('storage/' . $post->thumbnail) }}.jpg" onerror="this.onerror=null;this.src='/images/picture-svgrepo-com.jpg';" alt="Blog Post illustration" class="rounded"/>        
         </div>
 
         <div class="mt-6 flex flex-col justify-between flex-1">

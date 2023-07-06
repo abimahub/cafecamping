@@ -125,7 +125,7 @@
         <footer id="newsletter"
                 class="bg-green-200 border border-green border-opacity-5 rounded-xl text-center py-16 px-10 mt-16"
         >
-            <img src="/newsletter.png" alt="" class="mx-auto -mb-6" style="width: 145px; text-green-700">
+            <img src="/newsletter.png" alt="" class="mx-auto -mb-6" style="width: 45px; text-green-700">
 
             <h5 class="text-3xl">Stay in touch with the latest posts</h5>
             <p class="text-sm mt-3">Promise to keep the inbox clean. No bugs.</p>
