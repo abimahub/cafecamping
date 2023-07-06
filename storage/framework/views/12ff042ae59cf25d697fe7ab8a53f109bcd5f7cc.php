@@ -5,7 +5,7 @@
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php $component->withAttributes([]); ?>
     <button type="submit"
-            class="bg-amber-400 text-black uppercase font-semibold text-xs py-2 px-10 rounded hover:bg-green-600"
+            class="border-green-500 text-green-700 uppercase font-semibold text-xs py-2 px-10 rounded hover:bg-green-200"
     >
         <?php echo e($slot); ?>
 

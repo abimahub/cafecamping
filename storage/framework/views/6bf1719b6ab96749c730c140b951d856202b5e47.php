@@ -30,7 +30,7 @@
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <a href="/admin/posts/<?php echo e($post->id); ?>/edit" class="text-blue-500 hover:text-blue-600">Edit</a>
+                                            <a href="/admin/posts/<?php echo e($post->id); ?>/edit" class="text-green-500 hover:text-green-800">Edit</a>
                                         </td>
 
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
@@ -38,7 +38,7 @@
                                                 <?php echo csrf_field(); ?>
                                                 <?php echo method_field('DELETE'); ?>
 
-                                                <button class="text-xs text-green-400">Delete</button>
+                                                <button class="text-xs text-red-500">Delete</button>
                                             </form>
                                         </td>
                                     </tr>

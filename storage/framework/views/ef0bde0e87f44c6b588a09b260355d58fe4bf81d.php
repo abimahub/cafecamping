@@ -27,7 +27,7 @@
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
 <?php endif; ?>
 
-    <input class="border text-white border-green-200 p-2 w-full rounded"
+    <input class="border text-green-600 border-green-200 p-2 w-full rounded"
            name="<?php echo e($name); ?>"
            id="<?php echo e($name); ?>"
            <?php echo e($attributes(['value' => old($name)])); ?>

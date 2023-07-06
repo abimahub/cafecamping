@@ -28,7 +28,7 @@
 <?php endif; ?>
 
     <textarea
-        class="border border-green-200 p-2 w-full rounded"
+        class="border text-white border-green-200 p-2 w-full rounded"
         name="<?php echo e($name); ?>"
         id="<?php echo e($name); ?>"
         required
