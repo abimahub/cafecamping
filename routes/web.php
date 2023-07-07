@@ -28,9 +28,10 @@ Route::post('logout', [SessionsController::class, 'destroy'])->middleware('auth'
 Route::get('/user/{id}', [UserController::class, 'show'])->middleware('auth');
 
 // Admin Section
-Route::middleware('can:admin')->group(function () {
-    Route::resource('admin/posts/create', [AdminPostController::class, 'create'])->middleware('admin');
-});
+// Route::middleware('can:admin')->group(function () {
+//     Route::resource('admin/posts/create', [AdminPostController::class, 'create'])->middleware('admin');
+//     Route::post('admin/posts', [AdminPostController::class, 'store'])->middleware('admin');
+// });
 // //working through tutorial on restricting access
-// Route::get('admin/posts/create', [PostController::class, 'create'])->middleware('admin');
-// Route::post('admin/posts', [PostController::class, 'store'])->middleware('admin');
+Route::get('admin/posts/create', [PostController::class, 'create'])->middleware('admin');
+Route::post('admin/posts', [PostController::class, 'store'])->middleware('admin');
