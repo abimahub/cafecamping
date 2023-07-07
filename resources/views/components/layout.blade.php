@@ -56,6 +56,20 @@
                             >
                                 New Post
                             </x-dropdown-item>
+
+                             <x-dropdown-item
+                                href="/admin/users"
+                                :active="request()->is('admin/users')"
+                            >
+                                All Users
+                            </x-dropdown-item>
+
+                            <x-dropdown-item
+                                href="/admin/posts/create"
+                                :active="request()->is('admin/users/create')"
+                            >
+                                New User
+                            </x-dropdown-item>
                         @endadmin
 
                         <x-dropdown-item
